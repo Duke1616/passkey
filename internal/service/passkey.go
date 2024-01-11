@@ -1,4 +1,4 @@
-package passkey
+package service
 
 import (
 	"context"
@@ -8,6 +8,7 @@ import (
 	"passkey-demo/internal/domain"
 )
 
+//go:generate mockgen -source=./passkey.go -package=svcmocks -destination=./mocks/passkey.mock.go Service
 type Service interface {
 	BeginRegistration(ctx context.Context, user *domain.User) (creation *protocol.CredentialCreation,
 		session *webauthn.SessionData, err error)

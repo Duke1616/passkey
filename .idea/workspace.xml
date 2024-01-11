@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/internal/service/user_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/mocks/user.mock.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/mocks/user.mock.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/passkey/type.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/passkey.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/web/passkey.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/web/passkey.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/webauthn.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/webauthn.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />
@@ -148,11 +148,12 @@
       <recent name="E:\go\passkey-demo\ioc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/internal/service" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ioc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn">
+  <component name="RunManager" selected="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn/查询成功">
     <configuration name="passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
       <working_directory value="$PROJECT_DIR$/internal/repository" />
@@ -215,8 +216,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn" />
         <item itemvalue="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn/查询成功" />
+        <item itemvalue="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn" />
         <item itemvalue="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername/查找成功" />
         <item itemvalue="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername" />
         <item itemvalue="Go 测试.passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert" />
@@ -239,16 +240,5 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/internal/service/user_test.go</url>
-          <line>49</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

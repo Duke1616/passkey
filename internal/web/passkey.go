@@ -8,17 +8,16 @@ import (
 	"github.com/go-webauthn/webauthn/webauthn"
 	"net/http"
 	"passkey-demo/internal/service"
-	"passkey-demo/internal/service/passkey"
 )
 
 //var _ handler = (*UserHandler)(nil)
 
 type WebauthnHandler struct {
-	svc     passkey.Service
+	svc     service.Service
 	userSvc service.UserService
 }
 
-func NewWebauthnHandler(svc passkey.Service, userSvc service.UserService) *WebauthnHandler {
+func NewWebauthnHandler(svc service.Service, userSvc service.UserService) *WebauthnHandler {
 	return &WebauthnHandler{
 		svc:     svc,
 		userSvc: userSvc,
