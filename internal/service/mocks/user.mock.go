@@ -36,18 +36,18 @@ func (m *MockUserService) EXPECT() *MockUserServiceMockRecorder {
 }
 
 // FindOrCreateByWebauthn mocks base method.
-func (m *MockUserService) FindOrCreateByWebauthn(ctx context.Context, accountName string) (domain.User, error) {
+func (m *MockUserService) FindOrCreateByWebauthn(ctx context.Context, username string) (domain.User, error) {
 	m.ctrl.T.Helper()
-	ret := m.ctrl.Call(m, "FindOrCreateByWebauthn", ctx, accountName)
+	ret := m.ctrl.Call(m, "FindOrCreateByWebauthn", ctx, username)
 	ret0, _ := ret[0].(domain.User)
 	ret1, _ := ret[1].(error)
 	return ret0, ret1
 }
 
 // FindOrCreateByWebauthn indicates an expected call of FindOrCreateByWebauthn.
-func (mr *MockUserServiceMockRecorder) FindOrCreateByWebauthn(ctx, accountName interface{}) *gomock.Call {
+func (mr *MockUserServiceMockRecorder) FindOrCreateByWebauthn(ctx, username interface{}) *gomock.Call {
 	mr.mock.ctrl.T.Helper()
-	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FindOrCreateByWebauthn", reflect.TypeOf((*MockUserService)(nil).FindOrCreateByWebauthn), ctx, accountName)
+	return mr.mock.ctrl.RecordCallWithMethodType(mr.mock, "FindOrCreateByWebauthn", reflect.TypeOf((*MockUserService)(nil).FindOrCreateByWebauthn), ctx, username)
 }
 
 // Update mocks base method.
