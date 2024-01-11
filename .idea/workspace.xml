@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/ioc/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/web.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/ionic.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/ionic.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/proxy.conf.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/proxy.conf.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/api/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/api/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/home/home.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/home/home.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/login/login.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/login/login.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/login/login.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/messages.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/messages.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/registration/registration.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/registration/registration.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/registration/registration.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/registration/registration.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/registration/registration.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/registration/registration.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/app/util.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/app/util.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/polyfills.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/polyfills.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/src/zone-flags.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/src/zone-flags.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/client/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/Taskfile.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/Taskfile.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/app.env" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/app.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/cleanup.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/cleanup.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/dto/registration.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/dto/registration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/dto/secret.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/dto/secret.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/dto/validatorfn.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/dto/validatorfn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/login.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/login.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/middleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/middleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/registration.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/registration.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/routes.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/routes.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/secret.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/secret.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/webauthn_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/api/webauthn_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/migrate/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/migrate/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/cmd/tsgen/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/cmd/tsgen/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/config/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/config/config.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/database/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/database/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/app_credentials.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/app_credentials.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/app_user.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/app_user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_queries.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_queries.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_table_names.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_table_names.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_types.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_types.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_view_names.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/boil_view_names.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/psql_upsert.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/psql_upsert.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/models/sessions.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/models/sessions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/request/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/request/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/response/errors.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/response/errors.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/response/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/response/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/internal/version/version.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/internal/version/version.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/migrations/000001_initial.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/migrations/000001_initial.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/migrations/efs.go" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/migrations/efs.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/sqlboiler/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/sqlboiler/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../webauthn-go/server/sqlboiler/sqlboiler.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/server/sqlboiler/sqlboiler.toml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///usr/local/go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://C:/go/src/regexp/regexp.go" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2a9nlyI9cNXiUqUv06KcK2IzJ2G" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go 构建.go build passkey-demo.executor": "Run",
+    "Go 构建.go build webauthn.rasc.ch/cmd/api.executor": "Run",
+    "Go 构建.go build webauthn.rasc.ch/cmd/migrate.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.automatic.dependencies.download": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "/Users/draken/Desktop/passkey-demo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "ts.external.directory.path": "/Users/draken/Desktop/webauthn-go/client/node_modules/typescript/lib"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\go\passkey-demo\ioc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ioc" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go 构建.go build passkey-demo">
+    <configuration name="go build passkey-demo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="passkey-demo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="passkey-demo" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build webauthn.rasc.ch/cmd/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="webauthn-go" />
+      <working_directory value="$PROJECT_DIR$/../webauthn-go/server" />
+      <kind value="PACKAGE" />
+      <package value="webauthn.rasc.ch/cmd/api" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/../webauthn-go/server/cmd/api/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build webauthn.rasc.ch/cmd/migrate" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="webauthn-go" />
+      <working_directory value="$PROJECT_DIR$/../webauthn-go/server" />
+      <kind value="PACKAGE" />
+      <package value="webauthn.rasc.ch/cmd/migrate" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/../webauthn-go/server/cmd/migrate/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go 构建.go build passkey-demo" />
+        <item itemvalue="Go 构建.go build webauthn.rasc.ch/cmd/api" />
+        <item itemvalue="Go 构建.go build webauthn.rasc.ch/cmd/migrate" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-266795519c66-911b893a1778-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-233.13135.104" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="javascript:npm:@angular/core" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+</project>

@@ -14,9 +14,6 @@ func InitWebServer(mdls []gin.HandlerFunc,
 	userHdl *web.UserHandler, webauthnHdl *web.WebauthnHandler) *gin.Engine {
 	server := gin.Default()
 	server.Use(mdls...)
-	server.Use(CORSMiddleware())
-	store := cookie.NewStore([]byte("111222333"))
-	server.Use(sessions.Sessions("session", store))
 	userHdl.RegisterRoutes(server)
 	webauthnHdl.RegisterRoutes(server)
 
@@ -28,6 +25,7 @@ func InitWebServer(mdls []gin.HandlerFunc,
 func InitGinMiddlewares() []gin.HandlerFunc {
 	return []gin.HandlerFunc{
 		corsHdl(),
+		sessHdl(),
 		func(ctx *gin.Context) {
 			//println("这是我的 Middleware")
 		},
@@ -54,18 +52,7 @@ func corsHdl() gin.HandlerFunc {
 	})
 }
 
-func CORSMiddleware() gin.HandlerFunc {
-	return func(c *gin.Context) {
-		c.Writer.Header().Set("Access-Control-Allow-Origin", "*")
-		c.Writer.Header().Set("Access-Control-Allow-Credentials", "true")
-		c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type, Content-Length, Accept-Encoding, X-CSRF-Token, Authorization, accept, origin, Cache-Control, X-Requested-With")
-		c.Writer.Header().Set("Access-Control-Allow-Methods", "POST, OPTIONS, GET, PUT, HEAD")
-
-		if c.Request.Method == "OPTIONS" {
-			c.AbortWithStatus(204)
-			return
-		}
-
-		c.Next()
-	}
+func sessHdl() gin.HandlerFunc {
+	store := cookie.NewStore([]byte("111222333"))
+	return sessions.Sessions("session", store)
 }
