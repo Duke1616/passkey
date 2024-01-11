@@ -5,10 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/config/load.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/viper.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ioc/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/logger/fields.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/logger/slog_logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/logger/types.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/logger/zap_logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/logger_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/passkey/type.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/passkey.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal/web/passkey.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/web/passkey.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/webauthn.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/webauthn.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wire.go" beforeDir="false" afterPath="$PROJECT_DIR$/wire.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wire_gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/wire_gen.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />
@@ -135,7 +146,7 @@
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "/Users/draken/Desktop/passkey-demo",
+    "last_opened_file_path": "/Users/draken/Desktop/passkey-demo/pkg/logger",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -145,82 +156,82 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg/logger" />
+      <recent name="$PROJECT_DIR$/ioc" />
       <recent name="E:\go\passkey-demo\ioc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pkg" />
       <recent name="$PROJECT_DIR$/internal/service" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/ioc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn/查询成功">
-    <configuration name="passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go 测试.passkey-demo/pkg 中的 TestSLogger">
+    <configuration name="go build passkey-demo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
-      <working_directory value="$PROJECT_DIR$/internal/repository" />
-      <root_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="passkey-demo/internal/repository" />
+      <package value="passkey-demo" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTestCachedUserRepository_FindByUsername\E$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername/查找成功" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="passkey-demo/pkg 中的 TestSLogger" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
-      <working_directory value="$PROJECT_DIR$/internal/repository" />
+      <working_directory value="$PROJECT_DIR$/pkg" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="passkey-demo/internal/repository" />
+      <package value="passkey-demo/pkg" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestCachedUserRepository_FindByUsername\E$/^\Q查找成功\E$" />
+      <pattern value="^\QTestSLogger\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="passkey-demo/pkg 中的 TestSLogger_Debug" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
-      <working_directory value="$PROJECT_DIR$/internal/repository/dao" />
+      <working_directory value="$PROJECT_DIR$/pkg" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="passkey-demo/internal/repository/dao" />
+      <package value="passkey-demo/pkg" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestGORMUserDAO_Insert\E$" />
+      <pattern value="^\QTestSLogger_Debug\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="passkey-demo/pkg 中的 TestZapLogging" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
-      <working_directory value="$PROJECT_DIR$/internal/service" />
+      <working_directory value="$PROJECT_DIR$/pkg" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="passkey-demo/internal/service" />
+      <package value="passkey-demo/pkg" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestFindOrCreateByWebauthn\E$" />
+      <pattern value="^\QTestZapLogging\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn/查询成功" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="passkey-demo/pkg/logger 中的 TestSLogger_Debug" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
-      <working_directory value="$PROJECT_DIR$/internal/service" />
+      <working_directory value="$PROJECT_DIR$/pkg/logger" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="passkey-demo/internal/service" />
+      <package value="passkey-demo/pkg/logger" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTestFindOrCreateByWebauthn\E$/^\Q查询成功\E$" />
+      <pattern value="^\QTestSLogger_Debug\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn/查询成功" />
-        <item itemvalue="Go 测试.passkey-demo/internal/service 中的 TestFindOrCreateByWebauthn" />
-        <item itemvalue="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername/查找成功" />
-        <item itemvalue="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername" />
-        <item itemvalue="Go 测试.passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert" />
+        <item itemvalue="Go 测试.passkey-demo/pkg 中的 TestSLogger" />
+        <item itemvalue="Go 测试.passkey-demo/pkg 中的 TestZapLogging" />
+        <item itemvalue="Go 测试.passkey-demo/pkg 中的 TestSLogger_Debug" />
+        <item itemvalue="Go 测试.passkey-demo/pkg/logger 中的 TestSLogger_Debug" />
+        <item itemvalue="Go 构建.go build passkey-demo" />
       </list>
     </recent_temporary>
   </component>
@@ -240,5 +251,16 @@
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/pkg/logger/zap_logger.go</url>
+          <line>35</line>
+          <option name="timeStamp" value="83" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

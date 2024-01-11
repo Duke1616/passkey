@@ -14,7 +14,7 @@ import (
 func InitWebServer() *App {
 	wire.Build(
 		// 第三方依赖
-		ioc.InitDB,
+		ioc.InitDB, ioc.InitLoggerSlog,
 		// DAO 部分
 		dao.NewUserDAO,
 		// cache 部分

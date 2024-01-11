@@ -19,12 +19,13 @@ import (
 func InitWebServer() *App {
 	v := ioc.InitGinMiddlewares()
 	userHandler := web.NewUserHandler()
-	passkeyService := ioc.InitWebauthn()
+	logger := ioc.InitLoggerSlog()
+	serviceService := ioc.InitWebauthn()
 	db := ioc.InitDB()
 	userDAO := dao.NewUserDAO(db)
 	userRepository := repository.NewCachedUserRepository(userDAO)
 	userService := service.NewUserService(userRepository)
-	webauthnHandler := web.NewWebauthnHandler(passkeyService, userService)
+	webauthnHandler := web.NewWebauthnHandler(logger, serviceService, userService)
 	engine := ioc.InitWebServer(v, userHandler, webauthnHandler)
 	app := &App{
 		web: engine,

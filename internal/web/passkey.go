@@ -8,17 +8,20 @@ import (
 	"github.com/go-webauthn/webauthn/webauthn"
 	"net/http"
 	"passkey-demo/internal/service"
+	"passkey-demo/pkg/logger"
 )
 
 //var _ handler = (*UserHandler)(nil)
 
 type WebauthnHandler struct {
+	l       logger.Logger
 	svc     service.Service
 	userSvc service.UserService
 }
 
-func NewWebauthnHandler(svc service.Service, userSvc service.UserService) *WebauthnHandler {
+func NewWebauthnHandler(l logger.Logger, svc service.Service, userSvc service.UserService) *WebauthnHandler {
 	return &WebauthnHandler{
+		l:       l,
 		svc:     svc,
 		userSvc: userSvc,
 	}
@@ -35,6 +38,7 @@ func (w *WebauthnHandler) RegisterRoutes(server *gin.Engine) {
 }
 
 func (w *WebauthnHandler) setSession(c *gin.Context) {
+	w.l.Debug("输入参数")
 	//初始化 session 对象
 	session := sessions.Default(c) //设置过期时间
 	// 过期时间6h
@@ -42,6 +46,7 @@ func (w *WebauthnHandler) setSession(c *gin.Context) {
 	//设置 Session
 	session.Set("username", "lxx")
 	session.Save()
+
 	c.JSON(200, gin.H{"msg": "设置session成功----userrname:lxx"})
 }
 
