@@ -6,6 +6,7 @@ import (
 	"passkey-demo/internal/repository/dao"
 )
 
+//go:generate mockgen -source=./user.go -package=repomocks -destination=./mocks/user.mock.go UserRepository
 type UserRepository interface {
 	Create(ctx context.Context, u domain.User) error
 	Update(ctx context.Context, art domain.User) error

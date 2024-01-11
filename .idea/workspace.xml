@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/ioc/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/web.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/dao/user_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/repository/user_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/dao/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/dao/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/repository/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/user.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />
@@ -149,39 +156,74 @@
       <recent name="$PROJECT_DIR$/ioc" />
     </key>
   </component>
-  <component name="RunManager" selected="Go 构建.go build passkey-demo">
-    <configuration name="go build passkey-demo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername/查找成功">
+    <configuration name="passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="passkey-demo" />
-      <working_directory value="$PROJECT_DIR$" />
+      <working_directory value="$PROJECT_DIR$/internal/repository" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="passkey-demo" />
+      <package value="passkey-demo/internal/repository" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCachedUserRepository_FindByUsername\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build webauthn.rasc.ch/cmd/api" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="webauthn-go" />
-      <working_directory value="$PROJECT_DIR$/../webauthn-go/server" />
+    <configuration name="passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername/查找成功" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="passkey-demo" />
+      <working_directory value="$PROJECT_DIR$/internal/repository" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="webauthn.rasc.ch/cmd/api" />
+      <package value="passkey-demo/internal/repository" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/../webauthn-go/server/cmd/api/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestCachedUserRepository_FindByUsername\E$/^\Q查找成功\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build webauthn.rasc.ch/cmd/migrate" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="webauthn-go" />
-      <working_directory value="$PROJECT_DIR$/../webauthn-go/server" />
+    <configuration name="passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="passkey-demo" />
+      <working_directory value="$PROJECT_DIR$/internal/repository/dao" />
+      <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="webauthn.rasc.ch/cmd/migrate" />
+      <package value="passkey-demo/internal/repository/dao" />
       <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/../webauthn-go/server/cmd/migrate/main.go" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGORMUserDAO_Insert\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert/邮箱冲突" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="passkey-demo" />
+      <working_directory value="$PROJECT_DIR$/internal/repository/dao" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="passkey-demo/internal/repository/dao" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGORMUserDAO_Insert\E$/^\Q邮箱冲突\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert/数据库错误" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="passkey-demo" />
+      <working_directory value="$PROJECT_DIR$/internal/repository/dao" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="passkey-demo/internal/repository/dao" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGORMUserDAO_Insert\E$/^\Q数据库错误\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go 构建.go build passkey-demo" />
-        <item itemvalue="Go 构建.go build webauthn.rasc.ch/cmd/api" />
-        <item itemvalue="Go 构建.go build webauthn.rasc.ch/cmd/migrate" />
+        <item itemvalue="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername/查找成功" />
+        <item itemvalue="Go 测试.passkey-demo/internal/repository 中的 TestCachedUserRepository_FindByUsername" />
+        <item itemvalue="Go 测试.passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert" />
+        <item itemvalue="Go 测试.passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert/数据库错误" />
+        <item itemvalue="Go 测试.passkey-demo/internal/repository/dao 中的 TestGORMUserDAO_Insert/邮箱冲突" />
       </list>
     </recent_temporary>
   </component>

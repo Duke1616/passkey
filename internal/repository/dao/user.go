@@ -17,6 +17,7 @@ var (
 	ErrDuplicateUsername = errors.New("用户名冲突")
 )
 
+//go:generate mockgen -source=./user.go -package=daomocks -destination=./mocks/user.mock.go UserDAO
 type UserDAO interface {
 	Insert(ctx context.Context, u User) error
 	UpdateById(ctx context.Context, entity User) error

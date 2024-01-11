@@ -7,6 +7,7 @@ import (
 	"passkey-demo/internal/repository/dao"
 )
 
+//go:generate mockgen -source=./user.go -package=svcmocks -destination=./mocks/user.mock.go UserService
 type UserService interface {
 	FindOrCreateByWebauthn(ctx context.Context, accountName string) (domain.User, error)
 	Update(ctx context.Context, u domain.User) error
