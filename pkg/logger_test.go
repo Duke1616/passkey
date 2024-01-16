@@ -1,6 +1,7 @@
 package pkg
 
 import (
+	"context"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"log/slog"
@@ -32,7 +33,7 @@ func TestSLogger(t *testing.T) {
 	l := slog.New(slog.NewTextHandler(os.Stdout, opts))
 
 	ls := logger.NewSLogger(l)
-	//ls.WithGroup("group").LogAttrs(context.Background(), slog.LevelInfo, "msg", slog.Int("a", 1), slog.Int("b", 2))
+	l.WithGroup("group").LogAttrs(context.Background(), slog.LevelInfo, "msg", slog.Int("a", 1), slog.Int("b", 2))
 
 	ls.Error("你好")
 	//l.LogAttrs(context.Background(), slog.LevelInfo, "msg", slog.Group("s", slog.Int("a", 1), slog.Int("b", 2)))
