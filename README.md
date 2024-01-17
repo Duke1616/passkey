@@ -2,7 +2,6 @@
 
 # 项目启动
 ## 环境依赖
-- linux amd
 - docker
 - docker-compose
   - redis

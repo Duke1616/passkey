@@ -7,7 +7,10 @@
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/load.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/load.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/viper.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/viper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ioc/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/db.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />
@@ -150,11 +153,11 @@
       <recent name="E:\go\passkey-demo\ioc" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/config" />
+      <recent name="$PROJECT_DIR$/cmd/start" />
       <recent name="$PROJECT_DIR$/cmd/app" />
       <recent name="$PROJECT_DIR$/cmd" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/wire" />
-      <recent name="$PROJECT_DIR$/config" />
     </key>
   </component>
   <component name="RunManager" selected="Go 构建.go build github.com/Duke1616/passkey">
@@ -162,6 +165,13 @@
       <module name="passkey-demo" />
       <working_directory value="$PROJECT_DIR$" />
       <parameters value="start" />
+      <envs>
+        <env name="PASSKEY_MYSQL_DATABASE" value="passkey" />
+        <env name="PASSKEY_MYSQL_HOST" value="10.31.0.15" />
+        <env name="PASSKEY_MYSQL_PASSWORD" value="ebondorthanc123" />
+        <env name="PASSKEY_MYSQL_PORT" value="9999" />
+        <env name="PASSKEY_MYSQL_USERNAME" value="root" />
+      </envs>
       <kind value="PACKAGE" />
       <package value="github.com/Duke1616/passkey" />
       <directory value="$PROJECT_DIR$" />

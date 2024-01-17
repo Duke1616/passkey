@@ -16,6 +16,7 @@ func InitDB() *gorm.DB {
 	database := config.C().Mysql.DATABASE
 	DSN := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", username, password, host, port, database)
 
+	fmt.Println(DSN)
 	db, err := gorm.Open(mysql.Open(DSN))
 	if err != nil {
 		panic(err)

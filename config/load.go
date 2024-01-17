@@ -1,9 +1,5 @@
 package config
 
-import (
-	"log/slog"
-)
-
 var (
 	conf *Config
 )
@@ -22,7 +18,7 @@ func LoadConfig() error {
 	conf, err = TryLoadFromDisk()
 
 	if err != nil {
-		slog.Error("Failed to load configuration from disk: ", err)
+		return err
 	}
 
 	return nil

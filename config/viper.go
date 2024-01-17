@@ -59,14 +59,19 @@ func TryLoadFromDisk() (*Config, error) {
 func (c *viperConfig) loadFromDisk() (*Config, error) {
 	var err error
 	c.loadOnce.Do(func() {
+		//if err = viper.ReadInConfig(); err != nil {
+		//	if _, ok := err.(viper.ConfigFileNotFoundError); ok {
+		//		// 配置文件不存在，不影响从环境变量中获取
+		//		slog.Warn("Config file not found: ", err.Error())
+		//	} else {
+		//		return
+		//	}
+		//}
+
 		if err = viper.ReadInConfig(); err != nil {
-			if _, ok := err.(viper.ConfigFileNotFoundError); ok {
-				// 配置文件不存在，不影响从环境变量中获取
-				slog.Warn("Config file not found: ", err.Error())
-			} else {
-				return
-			}
+			return
 		}
+
 		if err = viper.Unmarshal(c.cfg); err != nil {
 			return
 		}
