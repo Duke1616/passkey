@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/viper.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/viper.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deploy/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
@@ -167,6 +168,8 @@
         <env name="PASSKEY_MYSQL_PASSWORD" value="ebondorthanc123" />
         <env name="PASSKEY_MYSQL_PORT" value="9999" />
         <env name="PASSKEY_MYSQL_USERNAME" value="root" />
+        <env name="PASSKEY_WEBAUTHN_RP_ID" value="localhost" />
+        <env name="PASSKEY_WEBAUTHN_RP_ORIGINS" value="http://localhost:8100" />
       </envs>
       <kind value="PACKAGE" />
       <package value="github.com/Duke1616/passkey" />
@@ -268,6 +271,11 @@
           <url>file://$PROJECT_DIR$/pkg/logger/zap_logger.go</url>
           <line>35</line>
           <option name="timeStamp" value="83" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/internal/web/passkey.go</url>
+          <line>131</line>
+          <option name="timeStamp" value="93" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
