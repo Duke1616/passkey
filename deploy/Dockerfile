@@ -10,6 +10,7 @@ FROM alpine:latest as deploy
 WORKDIR /usr/src/backend
 COPY --from=build /usr/src/backend/dist/passkey .
 COPY ./views ./views
+COPY ./config/config.toml.example ./config/config.toml
 EXPOSE 8100
 # CMD ["start"]
 # ENTRYPOINT ["./passkey"]
