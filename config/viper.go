@@ -1,10 +1,9 @@
-package confer
+package config
 
 import (
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
 	"os"
-	"passkey-demo/config"
 	"passkey-demo/pkg/logger"
 	"strings"
 	"sync"
@@ -22,8 +21,8 @@ const (
 )
 
 type viperConfig struct {
-	cfg         *config.Config
-	cfgChangeCh chan config.Config
+	cfg         *Config
+	cfgChangeCh chan Config
 	watchOnce   sync.Once
 	loadOnce    sync.Once
 }
@@ -47,18 +46,18 @@ func defaultConfig() *viperConfig {
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
 	return &viperConfig{
-		cfg:         config.NewConfig(),
-		cfgChangeCh: make(chan config.Config),
+		cfg:         NewConfig(),
+		cfgChangeCh: make(chan Config),
 		watchOnce:   sync.Once{},
 		loadOnce:    sync.Once{},
 	}
 }
 
-func TryLoadFromDisk() (*config.Config, error) {
+func TryLoadFromDisk() (*Config, error) {
 	return _config.loadFromDisk()
 }
 
-func (c *viperConfig) loadFromDisk() (*config.Config, error) {
+func (c *viperConfig) loadFromDisk() (*Config, error) {
 	var err error
 	c.loadOnce.Do(func() {
 		if err = viper.ReadInConfig(); err != nil {
@@ -74,15 +73,15 @@ func (c *viperConfig) loadFromDisk() (*config.Config, error) {
 }
 
 // WatchConfigChange return config change channel
-func WatchConfigChange() <-chan config.Config {
+func WatchConfigChange() <-chan Config {
 	return _config.watchConfig()
 }
 
-func (c *viperConfig) watchConfig() <-chan config.Config {
+func (c *viperConfig) watchConfig() <-chan Config {
 	c.watchOnce.Do(func() {
 		viper.WatchConfig()
 		viper.OnConfigChange(func(in fsnotify.Event) {
-			cfg := config.NewConfig()
+			cfg := NewConfig()
 			if err := viper.Unmarshal(cfg); err != nil {
 				L.Warn("config reload error: %v", logger.Error(err))
 			} else {

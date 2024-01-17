@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/config/config.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/confer/load.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pkg/confer/viper.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/load.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/viper.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/webauthn.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/webauthn.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/logger/fields.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/logger/fields.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pkg/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/logger_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />

@@ -2,7 +2,7 @@ package main
 
 import (
 	"errors"
-	"passkey-demo/pkg/confer"
+	"passkey-demo/config"
 )
 
 func main() {
@@ -19,12 +19,12 @@ func main() {
 func loadGlobalConfig(configType string) error {
 	switch configType {
 	case "file":
-		err := confer.LoadConfigFromToml()
+		err := config.LoadConfigFromToml()
 		if err != nil {
 			return err
 		}
 	case "env":
-		err := confer.LoadConfigFromEnv()
+		err := config.LoadConfigFromEnv()
 		if err != nil {
 			return err
 		}

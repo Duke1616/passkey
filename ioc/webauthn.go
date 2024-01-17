@@ -1,14 +1,14 @@
 package ioc
 
 import (
+	"passkey-demo/config"
 	"passkey-demo/internal/service"
-	"passkey-demo/pkg/confer"
 	"strings"
 )
 
 func InitWebauthn() service.Service {
-	rpId := confer.C().Webauthn.RPID
-	rpDisplayName := confer.C().Webauthn.RPDisplayName
-	rpOrigins := strings.Split(confer.C().Webauthn.RPOrigins, ",")
+	rpId := config.C().Webauthn.RPID
+	rpDisplayName := config.C().Webauthn.RPDisplayName
+	rpOrigins := strings.Split(config.C().Webauthn.RPOrigins, ",")
 	return service.NewService(rpDisplayName, rpId, rpOrigins)
 }

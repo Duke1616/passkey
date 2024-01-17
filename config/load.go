@@ -1,16 +1,15 @@
-package confer
+package config
 
 import (
-	"passkey-demo/config"
 	"passkey-demo/pkg/logger"
 )
 
 var (
-	conf *config.Config
+	conf *Config
 )
 
 // C 全局配置对象
-func C() *config.Config {
+func C() *Config {
 	if conf == nil {
 		panic("Load Config first")
 	}
