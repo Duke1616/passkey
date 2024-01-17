@@ -1,7 +1,6 @@
 package config
 
 import (
-	"fmt"
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
 	"log/slog"
@@ -76,8 +75,6 @@ func (c *viperConfig) loadFromDisk() (*Config, error) {
 		if err = viper.Unmarshal(c.cfg); err != nil {
 			return
 		}
-
-		fmt.Print(c.cfg)
 	})
 
 	return c.cfg, err
