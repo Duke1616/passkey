@@ -8,7 +8,6 @@
   - redis
   - mysql
 
-
 ## 环境部署
 ### docker创建bridge网桥
 ```shell
@@ -25,4 +24,12 @@ docker-compose -f deploy/docker-compose.yaml up -d
 > 如果需要自定义，修改webauthn的相关参数配置即可
 ```shell
 localhost:8100
+```
+
+## 多平台构建镜像
+```shell
+docker buildx create --use
+docker buildx inspect --bootstrap
+
+docker buildx build --platform linux/amd64,linux/arm64 -t duke1616/passkey:1.0.0  -f deploy/Dockerfile . --push
 ```
