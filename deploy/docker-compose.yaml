@@ -3,7 +3,7 @@ services:
   backend:
     restart: always
     container_name: passkey-demo
-    image: duke1616/passkey:0.0.1
+    image: duke1616/passkey:1.0.0
     ports:
       - "8100:8100"
     environment:
