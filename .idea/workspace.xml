@@ -5,39 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66266349-0023-453a-acbb-972c6312fa00" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/root.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cmd/start/cmd.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/config.toml.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deploy/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/internal/repository/cache/user.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ioc/redis.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/app/app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/config.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/load.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/load.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/types.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/types.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/viper.go" beforeDir="false" afterPath="$PROJECT_DIR$/config/viper.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/repository/dao/mocks/user.mock.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/dao/mocks/user.mock.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/repository/mocks/user.mock.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/mocks/user.mock.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/repository/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/repository/user_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/repository/user_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/mocks/passkey.mock.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/mocks/passkey.mock.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/mocks/user.mock.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/mocks/user.mock.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/passkey.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/passkey.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/service/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/service/user.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal/web/passkey.go" beforeDir="false" afterPath="$PROJECT_DIR$/internal/web/passkey.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/logger.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/logger.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/web.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/web.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ioc/webauthn.go" beforeDir="false" afterPath="$PROJECT_DIR$/ioc/webauthn.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wire.go" beforeDir="false" afterPath="$PROJECT_DIR$/wire.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wire_gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deploy/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/LICENSE" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.browserslistrc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/../webauthn-go/client/.editorconfig" afterDir="false" />
