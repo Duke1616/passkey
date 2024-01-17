@@ -4,6 +4,7 @@ services:
     restart: always
     container_name: passkey-demo
     image: duke1616/passkey:1.0.0
+    command: ./passkey start
     ports:
       - "8100:8100"
     environment:
