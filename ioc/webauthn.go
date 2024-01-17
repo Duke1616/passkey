@@ -1,8 +1,8 @@
 package ioc
 
 import (
-	"passkey-demo/config"
-	"passkey-demo/internal/service"
+	"github.com/Duke1616/passkey/config"
+	"github.com/Duke1616/passkey/internal/service"
 	"strings"
 )
 

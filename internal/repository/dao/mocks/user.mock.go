@@ -6,9 +6,9 @@ package daomocks
 
 import (
 	context "context"
-	dao "passkey-demo/internal/repository/dao"
 	reflect "reflect"
 
+	dao "github.com/Duke1616/passkey/internal/repository/dao"
 	gomock "github.com/golang/mock/gomock"
 )
 

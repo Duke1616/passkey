@@ -1,7 +1,7 @@
-package main
+package app
 
 import "github.com/gin-gonic/gin"
 
 type App struct {
-	web *gin.Engine
+	Web *gin.Engine
 }

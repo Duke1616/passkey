@@ -1,7 +1,0 @@
-[mysql]
-dsn = "root:ebondorthanc123@tcp(10.31.0.15:9999)/passkey"
-
-[webauthn]
-rp_id = "localhost"
-rp_display_name = "WebAuthn Example Application"
-rp_origins = "http://localhost:8100"

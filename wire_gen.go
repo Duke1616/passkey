@@ -7,28 +7,32 @@
 package main
 
 import (
-	"passkey-demo/internal/repository"
-	"passkey-demo/internal/repository/dao"
-	"passkey-demo/internal/service"
-	"passkey-demo/internal/web"
-	"passkey-demo/ioc"
+	"github.com/Duke1616/passkey/cmd/app"
+	"github.com/Duke1616/passkey/internal/repository"
+	"github.com/Duke1616/passkey/internal/repository/cache"
+	"github.com/Duke1616/passkey/internal/repository/dao"
+	"github.com/Duke1616/passkey/internal/service"
+	"github.com/Duke1616/passkey/internal/web"
+	"github.com/Duke1616/passkey/ioc"
 )
 
 // Injectors from wire.go:
 
-func InitWebServer() *App {
+func InitWebServer() *app.App {
 	v := ioc.InitGinMiddlewares()
 	userHandler := web.NewUserHandler()
 	logger := ioc.InitLoggerSlog()
 	serviceService := ioc.InitWebauthn()
 	db := ioc.InitDB()
 	userDAO := dao.NewUserDAO(db)
-	userRepository := repository.NewCachedUserRepository(userDAO)
+	cmdable := ioc.InitRedis()
+	userCache := cache.NewUserCache(cmdable)
+	userRepository := repository.NewCachedUserRepository(userDAO, userCache)
 	userService := service.NewUserService(userRepository)
 	webauthnHandler := web.NewWebauthnHandler(logger, serviceService, userService)
 	engine := ioc.InitWebServer(v, userHandler, webauthnHandler)
-	app := &App{
-		web: engine,
+	appApp := &app.App{
+		Web: engine,
 	}
-	return app
+	return appApp
 }

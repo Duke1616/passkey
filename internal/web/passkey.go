@@ -3,12 +3,12 @@ package web
 import (
 	"encoding/json"
 	"fmt"
+	"github.com/Duke1616/passkey/internal/service"
+	"github.com/Duke1616/passkey/pkg/logger"
 	"github.com/gin-contrib/sessions"
 	"github.com/gin-gonic/gin"
 	"github.com/go-webauthn/webauthn/webauthn"
 	"net/http"
-	"passkey-demo/internal/service"
-	"passkey-demo/pkg/logger"
 )
 
 //var _ handler = (*UserHandler)(nil)

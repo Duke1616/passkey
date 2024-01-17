@@ -1,0 +1,40 @@
+version: '3'
+services:
+  backend:
+    restart: always
+    container_name: passkey-demo
+    image: duke1616/passkey:0.0.1
+    ports:
+      - "8100:8100"
+    environment:
+      - TZ=Asia/Shanghai
+      - PASSKEY_MYSQL_HOST=localhost
+      - PASSKEY_MYSQL_PORT=3306
+      - PASSKEY_MYSQL_USERNAME=root
+      - PASSKEY_MYSQL_PASSWORD=123456
+      - PASSKEY_MYSQL_DATABASE=passkey
+      - PASSKEY_WEBAUTHN_RP_ID="localhost"
+      - PASSKEY_WEBAUTHN_RP_DISPLAY_NAME="WebAuthn Example Application"
+      - PASSKEY_WEBAUTHN_RP_ORIGINS="localhost:8100"
+      - PASSKEY_REDIS_ADDR="localhost:6379"
+    depends_on:
+      - mysql
+      - redis
+  mysql:
+    restart: always
+    container_name: mysql
+    image: mysql:8.0.29
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: passkey
+  redis:
+    restart: always
+    container_name: redis
+    image: redis:8.0.29
+    ports:
+      - "6379:6379"
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_DATABASE: passkey

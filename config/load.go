@@ -1,7 +1,7 @@
 package config
 
 import (
-	"passkey-demo/pkg/logger"
+	"log/slog"
 )
 
 var (
@@ -17,17 +17,13 @@ func C() *Config {
 	return conf
 }
 
-func LoadConfigFromToml() error {
+func LoadConfig() error {
 	var err error
 	conf, err = TryLoadFromDisk()
 
 	if err != nil {
-		L.Error("Failed to load configuration from disk: %v", logger.Error(err))
+		slog.Error("Failed to load configuration from disk: ", err)
 	}
 
-	return nil
-}
-
-func LoadConfigFromEnv() error {
 	return nil
 }

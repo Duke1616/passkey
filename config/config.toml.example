@@ -1,0 +1,14 @@
+[mysql]
+host = "localhost"
+port = 3306
+username = "root"
+password = "123456"
+database = "passkey"
+
+[webauthn]
+rp_id = "localhost"
+rp_display_name = "WebAuthn Example Application"
+rp_origins = "http://localhost:8100"
+
+[redis]
+addr = "localhost:6379"

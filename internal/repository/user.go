@@ -2,8 +2,9 @@ package repository
 
 import (
 	"context"
-	"passkey-demo/internal/domain"
-	"passkey-demo/internal/repository/dao"
+	"github.com/Duke1616/passkey/internal/domain"
+	"github.com/Duke1616/passkey/internal/repository/cache"
+	"github.com/Duke1616/passkey/internal/repository/dao"
 )
 
 //go:generate mockgen -source=./user.go -package=repomocks -destination=./mocks/user.mock.go UserRepository
@@ -14,12 +15,14 @@ type UserRepository interface {
 }
 
 type CachedUserRepository struct {
-	dao dao.UserDAO
+	dao   dao.UserDAO
+	cache cache.UserCache
 }
 
-func NewCachedUserRepository(userDao dao.UserDAO) UserRepository {
+func NewCachedUserRepository(userDao dao.UserDAO, userCache cache.UserCache) UserRepository {
 	return &CachedUserRepository{
-		dao: userDao,
+		dao:   userDao,
+		cache: userCache,
 	}
 }
 

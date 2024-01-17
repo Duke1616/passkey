@@ -3,8 +3,8 @@ package config
 import (
 	"github.com/fsnotify/fsnotify"
 	"github.com/spf13/viper"
+	"log/slog"
 	"os"
-	"passkey-demo/pkg/logger"
 	"strings"
 	"sync"
 )
@@ -12,12 +12,11 @@ import (
 var (
 	// singleton instance of config package
 	_config = defaultConfig()
-	L       logger.Logger
 )
 
 const (
 	defaultConfigurationName = "config"
-	defaultConfigurationPath = "/config"
+	defaultConfigurationPath = "config"
 )
 
 type viperConfig struct {
@@ -35,7 +34,7 @@ func defaultConfig() *viperConfig {
 
 	viper.SetConfigType("toml")
 	viper.SetConfigName(defaultConfigurationName)
-	viper.AddConfigPath(path + defaultConfigurationPath)
+	viper.AddConfigPath(path + "/" + defaultConfigurationPath)
 
 	// Load from current working directory, only used for debugging
 	viper.AddConfigPath(".")
@@ -46,7 +45,7 @@ func defaultConfig() *viperConfig {
 	viper.SetEnvKeyReplacer(strings.NewReplacer(".", "_"))
 
 	return &viperConfig{
-		cfg:         NewConfig(),
+		cfg:         NewDefaultConfig(),
 		cfgChangeCh: make(chan Config),
 		watchOnce:   sync.Once{},
 		loadOnce:    sync.Once{},
@@ -61,9 +60,13 @@ func (c *viperConfig) loadFromDisk() (*Config, error) {
 	var err error
 	c.loadOnce.Do(func() {
 		if err = viper.ReadInConfig(); err != nil {
-			return
+			if _, ok := err.(viper.ConfigFileNotFoundError); ok {
+				// 配置文件不存在，不影响从环境变量中获取
+				slog.Warn("Config file not found: ", err.Error())
+			} else {
+				return
+			}
 		}
-
 		if err = viper.Unmarshal(c.cfg); err != nil {
 			return
 		}
@@ -81,9 +84,9 @@ func (c *viperConfig) watchConfig() <-chan Config {
 	c.watchOnce.Do(func() {
 		viper.WatchConfig()
 		viper.OnConfigChange(func(in fsnotify.Event) {
-			cfg := NewConfig()
+			cfg := NewDefaultConfig()
 			if err := viper.Unmarshal(cfg); err != nil {
-				L.Warn("config reload error: %v", logger.Error(err))
+				slog.Warn("config reload error: ", err)
 			} else {
 				c.cfgChangeCh <- *cfg
 				conf = cfg

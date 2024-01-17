@@ -2,12 +2,12 @@ package repository
 
 import (
 	"context"
+	"github.com/Duke1616/passkey/internal/domain"
+	"github.com/Duke1616/passkey/internal/repository/dao"
+	daomocks "github.com/Duke1616/passkey/internal/repository/dao/mocks"
 	"github.com/go-webauthn/webauthn/webauthn"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	"passkey-demo/internal/domain"
-	"passkey-demo/internal/repository/dao"
-	daomocks "passkey-demo/internal/repository/dao/mocks"
 	"testing"
 	"time"
 )
@@ -53,7 +53,7 @@ func TestCachedUserRepository_FindByUsername(t *testing.T) {
 			ctrl := gomock.NewController(t)
 			defer ctrl.Finish()
 			uc := tc.mock(ctrl)
-			svc := NewCachedUserRepository(uc)
+			svc := NewCachedUserRepository(uc, nil)
 			user, err := svc.FindByUsername(tc.ctx, tc.username)
 			assert.Equal(t, tc.wantErr, err)
 			assert.Equal(t, tc.wantUser, user)

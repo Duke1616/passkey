@@ -1,14 +1,21 @@
 package ioc
 
 import (
+	"fmt"
+	"github.com/Duke1616/passkey/config"
+	"github.com/Duke1616/passkey/internal/repository/dao"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"passkey-demo/config"
-	"passkey-demo/internal/repository/dao"
 )
 
 func InitDB() *gorm.DB {
-	DSN := config.C().Mysql.DSN
+	host := config.C().Mysql.HOST
+	port := config.C().Mysql.PORT
+	username := config.C().Mysql.USERNAME
+	password := config.C().Mysql.PASSWORD
+	database := config.C().Mysql.DATABASE
+	DSN := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", username, password, host, port, database)
+
 	db, err := gorm.Open(mysql.Open(DSN))
 	if err != nil {
 		panic(err)

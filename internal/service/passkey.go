@@ -2,10 +2,10 @@ package service
 
 import (
 	"context"
+	"github.com/Duke1616/passkey/internal/domain"
 	"github.com/go-webauthn/webauthn/protocol"
 	"github.com/go-webauthn/webauthn/webauthn"
 	"net/http"
-	"passkey-demo/internal/domain"
 )
 
 //go:generate mockgen -source=./passkey.go -package=svcmocks -destination=./mocks/passkey.mock.go Service

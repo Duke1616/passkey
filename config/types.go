@@ -3,15 +3,24 @@ package config
 type Config struct {
 	Mysql    MySQLConfig    `toml:"mysql" mapstructure:"mysql"`
 	Webauthn WebauthnConfig `toml:"webauthn" mapstructure:"webauthn"`
+	Redis    RedisConfig    `toml:"redis" mapstructure:"redis"`
 }
 
 type MySQLConfig struct {
-	DSN string `toml:"dsn" env:"DSN" mapstructure:"dsn"`
+	HOST     string `toml:"host" env:"HOST" mapstructure:"host"`
+	PORT     int32  `toml:"port" env:"PORT" mapstructure:"port"`
+	USERNAME string `toml:"username" env:"USERNAME" mapstructure:"username"`
+	PASSWORD string `toml:"password" env:"PASSWORD" mapstructure:"password"`
+	DATABASE string `toml:"database" env:"DATABASE" mapstructure:"database"`
 }
 
-func NewMySQLConfig() MySQLConfig {
+func NewDefaultMySQLConfig() MySQLConfig {
 	return MySQLConfig{
-		DSN: "root:123456@tcp(127.0.0.1:3306)/passkey",
+		USERNAME: "root",
+		PASSWORD: "123456",
+		PORT:     3306,
+		HOST:     "127.0.0.1",
+		DATABASE: "passkey",
 	}
 }
 
@@ -29,9 +38,20 @@ func NewDefaultWebauthnConfig() WebauthnConfig {
 	}
 }
 
-func NewConfig() *Config {
+type RedisConfig struct {
+	Addr string `toml:"addr" env:"ADDR" mapstructure:"addr"`
+}
+
+func NewDefaultRedisConfig() RedisConfig {
+	return RedisConfig{
+		Addr: "127.0.0.1:6379",
+	}
+}
+
+func NewDefaultConfig() *Config {
 	return &Config{
-		Mysql:    NewMySQLConfig(),
+		Mysql:    NewDefaultMySQLConfig(),
 		Webauthn: NewDefaultWebauthnConfig(),
+		Redis:    NewDefaultRedisConfig(),
 	}
 }

@@ -3,21 +3,27 @@
 package main
 
 import (
+	"github.com/Duke1616/passkey/cmd/app"
+	"github.com/Duke1616/passkey/internal/repository"
+	"github.com/Duke1616/passkey/internal/repository/cache"
+	"github.com/Duke1616/passkey/internal/repository/dao"
+	"github.com/Duke1616/passkey/internal/service"
+	"github.com/Duke1616/passkey/internal/web"
+	"github.com/Duke1616/passkey/ioc"
 	"github.com/google/wire"
-	"passkey-demo/internal/repository"
-	"passkey-demo/internal/repository/dao"
-	"passkey-demo/internal/service"
-	"passkey-demo/internal/web"
-	"passkey-demo/ioc"
 )
 
-func InitWebServer() *App {
+func InitWebServer() *app.App {
 	wire.Build(
 		// 第三方依赖
 		ioc.InitDB, ioc.InitLoggerSlog,
+		ioc.InitRedis,
+
 		// DAO 部分
 		dao.NewUserDAO,
+
 		// cache 部分
+		cache.NewUserCache,
 
 		// repository 部分
 		repository.NewCachedUserRepository,
@@ -32,7 +38,7 @@ func InitWebServer() *App {
 		ioc.InitGinMiddlewares,
 		ioc.InitWebServer,
 
-		wire.Struct(new(App), "*"),
+		wire.Struct(new(app.App), "*"),
 	)
-	return new(App)
+	return new(app.App)
 }

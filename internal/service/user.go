@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
-	"passkey-demo/internal/domain"
-	"passkey-demo/internal/repository"
-	"passkey-demo/internal/repository/dao"
+	"github.com/Duke1616/passkey/internal/domain"
+	"github.com/Duke1616/passkey/internal/repository"
+	"github.com/Duke1616/passkey/internal/repository/dao"
 )
 
 //go:generate mockgen -source=./user.go -package=svcmocks -destination=./mocks/user.mock.go UserService

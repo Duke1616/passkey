@@ -7,9 +7,9 @@ package svcmocks
 import (
 	context "context"
 	http "net/http"
-	domain "passkey-demo/internal/domain"
 	reflect "reflect"
 
+	domain "github.com/Duke1616/passkey/internal/domain"
 	protocol "github.com/go-webauthn/webauthn/protocol"
 	webauthn "github.com/go-webauthn/webauthn/webauthn"
 	gomock "github.com/golang/mock/gomock"

@@ -6,9 +6,9 @@ package svcmocks
 
 import (
 	context "context"
-	domain "passkey-demo/internal/domain"
 	reflect "reflect"
 
+	domain "github.com/Duke1616/passkey/internal/domain"
 	gomock "github.com/golang/mock/gomock"
 )
 

@@ -1,11 +1,11 @@
 package ioc
 
 import (
+	"github.com/Duke1616/passkey/pkg/logger"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"log/slog"
 	"os"
-	"passkey-demo/pkg/logger"
 )
 
 func InitLogger() logger.Logger {
