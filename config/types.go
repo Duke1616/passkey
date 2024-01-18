@@ -25,9 +25,9 @@ func NewDefaultMySQLConfig() MySQLConfig {
 }
 
 type WebauthnConfig struct {
-	RPID          string `toml:"rp_id" env:"RP_ID" mapstructure:"rp_id"`
-	RPDisplayName string `toml:"rp_display_name" env:"RP_DISPLAY_NAME" mapstructure:"rp_display_name"`
-	RPOrigins     string `toml:"rp_origins" env:"RP_ORIGINS" mapstructure:"rp_origins"`
+	RPID          string `toml:"rp_id" env:"WEBAUTHN_RP_ID" mapstructure:"rp_id"`
+	RPDisplayName string `toml:"rp_display_name" env:"WEBAUTHN_RP_DISPLAY_NAME" mapstructure:"rp_display_name"`
+	RPOrigins     string `toml:"rp_origins" env:"WEBAUTHN_RP_ORIGINS" mapstructure:"rp_origins"`
 }
 
 func NewDefaultWebauthnConfig() WebauthnConfig {
